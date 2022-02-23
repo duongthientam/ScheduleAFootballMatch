@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert title here</title>
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+
+    <form action="DatSan.html" name="myForm">
+        <h1>Đặt sân</h1>
+        <div class="row">
+            <div class="col-25">
+                <label>Tên sân</label>
+            </div>
+            <div class="col-75">
+                <p>Sân bóng nhân tạo trung hòa</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Địa chỉ</label>
+            </div>
+            <div class="col-75">
+                <p>Ngõ 55-57,đường Trần Phú,Hà Đông (trong trường đại học Nghệ thuật Trung ương)</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Liên hệ</label>
+            </div>
+            <div class="col-75">
+                <p>0962332538-Anh Hoàng</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="TenNguoiDat">Tên Người Đặt</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="TenNguoiDat" name="TenNguoiDat" maxlength="100" />
+                <p style="color:red;" id="error-TenNguoiDat"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="SoDienThoai">Số Điện Thoại</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="SoDienThoai" name="SoDienThoai">
+                <p style="color:red;" id="error-SoDienThoai"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="DatKhungGio">Đặt Khung Giờ</label>
+            </div>
+
+            <div class="col-75">
+                <select id="DatKhungGio" name="DatKhungGio">
+					<option>--Chọn khung giờ--</option>
+					<option value="300000">•06:00-16:00: 300k/h</option>
+					<option value="600000">•16:00-17:30: 600k/h</option>
+					<option value="800000">•17:30-20:30: 800k/h</option>
+					<option value="400000">•20:30-22:00: 400k/h</option>
+				</select>
+                <p style="color:red;" id="error-DatKhungGio"></p>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="SoGio">Số giờ</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="SoGio" name="SoGio">
+                <p style="color:red;" id="error-SoGio"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="SoNguoiChoi">Số người chơi</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="SoNguoiChoi" name="SoNguoiChoi">
+                <p style="color:red;" id="error-SoNguoiChoi"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="SoDoiChoi">Số đội chơi</label>
+
+            </div>
+            <div class="col-75">
+                <input type="number" id="SoDoiChoi" name="SoDoiChoi" value="2">
+                <p style="color:red;" id="error-SoDoiChoi"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="DatDinhKi">Đặt định kì</label>
+            </div>
+            <div class="col-75">
+                <div class="row-small">
+                    <input type="radio" id="Khong" name="DatDinhKi" value="Khong">
+                    <label for="Khong">Không</label>
+
+                </div>
+                <div class="row-small">
+                    <input type="radio" id="HangTuan" name="DatDinhKi" value="HangTuan">
+                    <label for="HangTuan">Hàng tuần</label>
+
+                </div>
+                <div class="row-small">
+                    <input type="radio" id="HangThang" name="DatDinhKi" value="HangThang"> <label for="HangThang">Hàng
+						tháng</label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Dịch vụ</label>
+            </div>
+
+            <div class="col-75">
+                <div class="row-small">
+                    <input type="checkbox" id="NuocUong" name="NuocUong" value="NuocUong"> <label for="NuocUong">Nước uống
+						miễn phí</label>
+                </div>
+                <div class="row-small">
+                    <input type="checkbox" id="DongPhuc" name="DongPhuc" value="DongPhuc"> <label for="DongPhuc">Đồng phục
+						thi đấu (300k/đaội)</label>
+                </div>
+                <div class="row-small">
+
+                    <input type="checkbox" id="ThueTT" name="ThueTT" value="ThueTT">
+                    <label for="ThueTT">Thuê trọng tài (200k/h)</label>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="TongTien">Tổng Tiền</label>
+            </div>
+            <div class="col-75">
+
+                <p type="number" name="sum" id="sum" disabled>VND</p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <input type="button" value="Submit" id="submitbtn" onclick="validateForm()">
+        </div>
+
+        <script src="js/book.js"></script>
+
+    </form>
+
+
+</body>
+
+</html>
